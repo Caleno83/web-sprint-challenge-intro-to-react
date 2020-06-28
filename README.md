@@ -29,18 +29,22 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+
   React Js is one of the most popular libraries that we have for bulding applications.  With React JS we can write our software and deploy our changes faster. React.js solves problems of a better use of data with a lot faster response.
 
 2. Describe component state.
+
   In my opinion, component state is a JavaScript Object, and its the one that we store component data, and its the one that determines its behaviour. unlike props, components cannot pass data with state, but they can create, manage data internally.
    
 
 3. Describe props.
+
   They are used to pass data between components. Props can only pass data from a Parent Component to a Child, and Props data are Read-Only meaning that Data coming from Parent to a Child component, the child cant change it.
       
 
 
 4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
       Side effects are anything that affects something outside of the scope of the functions that is being executed like fetching data from an API, timers or logging.    
       We use effects in React component using the Effect hook. Also, we sync effect in a React component, passing a dependency array as a second argument to the Effect hook.  If we dont pass an array to the callback function, the effect will fire after every change.
 

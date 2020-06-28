@@ -29,29 +29,38 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
+  React Js is one of the most popular libraries that we have for bulding applications.  With React JS we can write our software and deploy our changes faster. React.js solves problems of a better use of data with a lot faster response.
 
-1. Describe component state.
+2. Describe component state.
+  In my opinion, component state is a JavaScript Object, and its the one that we store component data, and its the one that determines its behaviour. unlike props, components cannot pass data with state, but they can create, manage data internally.
+   
 
-1. Describe props.
+3. Describe props.
+  They are used to pass data between components. Props can only pass data from a Parent Component to a Child, and Props data are Read-Only meaning that Data coming from Parent to a Child component, the child cant change it.
+      
 
-1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+      Side effects are anything that affects something outside of the scope of the functions that is being executed like fetching data from an API, timers or logging.    
+      We use effects in React component using the Effect hook. Also, we sync effect in a React component, passing a dependency array as a second argument to the Effect hook.  If we dont pass an array to the callback function, the effect will fire after every change.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
+
 
 ## Instructions
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: `git checkout -b <firstName-lastName>`.
-- [ ] Change directories into `./starwars` (`cd starwars`) and run `npm install` to retrieve all needed dependencies.
-- [ ] Once you have installed the _node_modules_, run `npm start` to get your server up and running.
-- [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
-- [ ] Push commits: `git push origin <firstName-lastName>`
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: `git push origin <firstName-lastName>`
+- [ x] Create a forked copy of this project
+- [ x] Add your team lead as collaborator on Github
+- [ x] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [ x] Create a new branch: `git checkout -b <firstName-lastName>`.
+- [ x] Change directories into `./starwars` (`cd starwars`) and run `npm install` to retrieve all needed dependencies.
+- [x ] Once you have installed the _node_modules_, run `npm start` to get your server up and running.
+- [x ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
+- [x ] Push commits: `git push origin <firstName-lastName>`
+- [ x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [ x] Push commits: `git push origin <firstName-lastName>`
 
 ### Task 2: Project Requirements
 

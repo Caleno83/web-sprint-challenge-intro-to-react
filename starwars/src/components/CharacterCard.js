@@ -10,7 +10,6 @@ import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons"
 const Background = styled.div`
 background-color: yellow;
 margin-top: 15px;
-margin-bottom: 20px;
 `
 
 const Button = styled.button`
@@ -109,9 +108,6 @@ const CharacterCard = props => {
             </ButtonDropdown>   
         </Background>
     
-
-
-
     );
 };
 

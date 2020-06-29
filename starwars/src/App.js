@@ -1,17 +1,30 @@
 import React from 'react';
 import './App.css';
 import Character from "./components/Character.js"
+import SecondCharacter from './components/SecondCharacter'
 import styled from "styled-components";
 
 const Container = styled.div`
 padding: 40px;
 margin-top: 40px;
 `
+
 const Title = styled.h1`
 text-align: center;
 color: #443e3e;
 text-shadow: 2px 2px green;
-padding: 10px 0 20px 0;
+padding: 0 0 20px 0;
+margin-top: -20px;
+&:hover {
+  color: yellow;
+}
+`
+
+const TitleSecond = styled.h1`
+text-align: center;
+color: #443e3e;
+text-shadow: 2px 2px green;
+padding: 60px 0 20px 0;
 &:hover {
   color: yellow;
 }
@@ -31,6 +44,8 @@ const App = () => {
       <Container>
         <Title>Main Characters</Title>
         <Character />
+        <TitleSecond>Secondary Characters</TitleSecond>
+        <SecondCharacter />
       </Container>
       </>
   );

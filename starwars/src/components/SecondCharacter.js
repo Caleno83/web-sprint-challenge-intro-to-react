@@ -1,24 +1,22 @@
-// Write your Character component here
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import CharacterCard from "./CharacterCard"
 
-
-const Character = () => {
+const SecondCharacter = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        //getting API data from:
-        axios.get(`https://rickandmortyapi.com/api/character/1,2,3,4,5`)
+        axios.get(`https://rickandmortyapi.com/api/character/6,7,8,9,10,11,12,13,14,15,16,17,18,19,20`)
         .then(res => {
-            console.log('Response from useEffect of MainCharacter', res);
+            console.log('Response from useEffect of SecondCharacter', res);
             setData(res.data);
-        },[] )
+        }, [])
         .catch(err => {
             console.log('Error occured in useEffect of Character', err);
         });
     });
 
+    
     return (
     
             <div>
@@ -35,8 +33,7 @@ const Character = () => {
                     image={p.image} />
                 ))}
             </div>
-
     )
 }
 
-export default Character;
+export default SecondCharacter;

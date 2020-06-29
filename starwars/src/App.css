@@ -1,7 +1,9 @@
-.App {
-  text-align: center;
-}
+
 .Header {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 50px;
+  padding: 10px;
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }

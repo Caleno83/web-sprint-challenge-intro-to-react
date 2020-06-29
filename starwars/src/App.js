@@ -1,7 +1,21 @@
 import React from 'react';
 import './App.css';
 import Character from "./components/Character.js"
+import styled from "styled-components";
 
+const Container = styled.div`
+padding: 40px;
+margin-top: 40px;
+`
+const Title = styled.h1`
+text-align: center;
+color: #443e3e;
+text-shadow: 2px 2px green;
+padding: 10px 0 20px 0;
+&:hover {
+  color: yellow;
+}
+`
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -12,15 +26,15 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div className="App">
+    <div>
       <>
       <h1 className="Header">Rick And Morty</h1>
-      <div>
+      <Container>
+        <Title>Main Characters</Title>
         <Character />
-      </div>
+      </Container>
       </>
-
-    </div>
+      </div>
   );
 }
 

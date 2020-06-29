@@ -26,15 +26,13 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div>
       <>
-      <h1 className="Header">Rick And Morty</h1>
+      <header></header>
       <Container>
         <Title>Main Characters</Title>
         <Character />
       </Container>
       </>
-      </div>
   );
 }
 

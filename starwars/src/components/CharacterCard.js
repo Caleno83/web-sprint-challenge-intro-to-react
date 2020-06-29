@@ -2,8 +2,13 @@ import React, { useState } from "react";
 import styled from 'styled-components';
 //I use this part for ButtonDropdown from https://reactstrap.github.io/components/button-dropdown/
 import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from "reactstrap";
+//I use this fontAwesome icons following the process from https://github.com/FortAwesome/react-fontawesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronCircleRight } from "@fortawesome/free-solid-svg-icons"
+
 
 const Background = styled.div`
+background-color: yellow;
 margin-top: 15px;
 margin-bottom: 20px;
 `
@@ -49,6 +54,14 @@ margin-right: 20px;
  justify-content: flex-end;
  margin-top: -330px;
  `
+ const ButtonArrow = styled.p`
+ color: green;
+ font-size: 25px;
+ float: right;
+ &:hover {
+    color: #008B8B;
+ }
+ `
 
 const CharacterCard = props => {
     console.log('props from CharacterCard', props);
@@ -63,8 +76,8 @@ const CharacterCard = props => {
     
         <Background>
             <ButtonDropdown isOpen={dropDownOpen} toggle={toggle}>
-                <DropdownToggle color="none">
-                    <Button>{props.name} </Button>
+                <DropdownToggle color="success">
+                    <Button>{props.name} <ButtonArrow><FontAwesomeIcon icon={faChevronCircleRight} /></ButtonArrow></Button>
                 </DropdownToggle>
                     <DropdownMenu>
                         <CardColor>
